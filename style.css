@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  background-color: #06181f;
+}
+
+.container .icon {
+  width: 400px;
+}
+
+.container .icon path {
+  fill: transparent;
+  stroke-width: 5;
+  stroke: #31e8ff;
+}
+
+.container .icon path {
+  stroke-dasharray: 5810;
+  stroke-dashoffset: 5810;
+}
+
+.container .icon:hover path {
+  animation: animate 20s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    stroke-dashoffset: 5810;
+  }
+  40% {
+    stroke-dashoffset: 0;
+  }
+
+  80% {
+    stroke-dashoffset: 5810;
+  }
+}
+.btn {
+  position: absolute;
+  bottom: 10px;
+  margin-inline: inset;
+  background-color: turquoise;
+  color: #06181f;
+  outline: none;
+  border: none;
+  width: 180px;
+  height: 50px;
+}
+.btn:hover path {
+  animation: animate 20s linear forwards;
+}
